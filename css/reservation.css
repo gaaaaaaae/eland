@@ -1,0 +1,218 @@
+/*1.반응형수업>풀스크린동영상사이트 참조*/
+/*2.jquery>마우스오버시영상재생 참조*/
+/*3.jquery>마우스휠 참조*/
+*{margin:0; padding:0; box-sizing:border-box;}
+ul{list-style:none;}
+a{text-decoration:none; color:inherit;}
+html,body{
+  width:100%;
+  font-family:"맑은 고딕", Arial;
+  color:#001325;
+}
+.clear::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/*header*/
+header{
+  width:100%;
+  height:60px;
+  position:relative;
+}
+header > .wrap{
+  width:1200px;
+  margin:30px auto 0px;
+}
+header .logo{
+  float:left;
+  width:275px;
+  margin-top:-10px;
+  margin-right:100px;
+}
+header .gnb > li{
+  float:left;
+  margin-left:30px;
+  text-align:center;
+  font-weight:bold;
+  line-height: 60px;
+}
+.gnb > li > a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.gnb .sub{
+  position: absolute;
+  font-weight:normal;
+  color:#fff;
+  width:100%;
+  background-color:#001325;
+  height:50px;
+  line-height:50px;
+  left:0; top:60px;
+  justify-content:center;
+  align-items:center;
+  display:none;
+}
+.gnb .sub > li{
+  margin:0 20px;
+}
+.gnb .sub > li:hover{
+  color:rgb(255, 225, 0);
+}
+header .search{
+  margin-top:20px;
+  float:right;
+  color:#666;
+}
+
+/*reservation*/
+.reservation{
+  width: 100%;
+  background:linear-gradient(#fff,#fff,#8ca7c4);
+}
+.reservation > .line{
+  width:100%;
+  height:50px;
+  padding:20px 0;
+}
+.reservation > .line > hr{
+  height:10px;
+  background-color:#001325;
+}
+.reservation > .contents{
+  width:1200px;
+  margin:auto; 
+  position:relative;
+  left:0;
+  padding:10px;
+}
+.reservation > .contents > .txt p{
+  margin:10px 0px;
+  color:#666;
+}
+.reservation .imgBox{
+  width:1110px;
+  margin:auto;
+}
+.reservation .imgBox > .box{
+  float:left;
+  margin:10px;
+  position:relative;
+  width:350px;
+  height:303px;
+  cursor:pointer;
+}
+.box img{width:100%;}
+.imgBox .bg{
+  position:absolute;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.8);
+  visibility: hidden;
+  opacity:0;
+  transition:0.2s ease;
+}
+.imgBox > .box:hover .bg,
+.imgBox > .box:active .bg{
+  visibility: visible;
+  opacity:1;
+}
+.bg .txt{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:0;
+  width:100%;
+  padding:0px 10px;
+  text-align:center;
+  color:#fff;
+}
+.bg .txt > h3{font-size:20px;}
+.bg .txt > p{
+  font-size:14px;
+  margin:10px 0px;
+}
+.bg .txt > .btn{
+  background-color:transparent;
+  border:1px solid #fff;
+  padding:5px 10px;
+  font-size:16px;
+  color:#fff;
+  cursor:pointer;
+}
+.bg .txt > .btn:last-child{margin-left:10px;}
+.bg .txt > .btn:hover{
+  color:rgb(255, 225, 0);
+  border-color:rgb(255, 225, 0);
+}
+
+footer{
+  width:100%;
+  height:100%;
+  background-color:#8ca7c4;
+}
+footer > .footer_wrap{
+  width:1200px;
+  margin:auto;
+  color:#333;
+  padding:20px 0px;
+}
+.footer_wrap > .top,
+.footer_wrap > .bottom{
+  width:100%;
+  padding:10px 0px;
+}
+.footer_wrap > .top{
+  display:flex;
+  justify-content:center;
+}
+.footer_wrap > .top > p{
+  margin-left:50px;
+}
+.footer_wrap > .bottom{
+  display:flex;
+  justify-content:center;
+}
+.footer_wrap > .bottom > .footer_logo{
+  margin-right:20px;
+}
+.footer_wrap > .bottom > .footer_right{
+  width:800px;
+}
+.footer_right > ul{
+  display:flex;
+}
+.footer_right > ul > li{
+  margin-right:10px;
+}
+.footer_right > .rT{
+  justify-content:center;
+  margin-bottom:5px;
+}
+.footer_right > .rB{
+  flex-wrap: wrap;
+}
+.footer_right > .rB > li{
+  padding-right:10px;
+  border-right:2px solid #666;
+}
+
+.upBtn{
+  position:fixed;
+  bottom:50px;
+  right:100px;
+  z-index:1;
+  border:none; outline:none;
+  font-size:30px;
+  color:#001325;
+  background-color:transparent;
+  cursor:pointer;
+  display:none;/*버튼을 화면에서 제거*/
+}
+.upBtn:hover{
+  color:#fff;
+}

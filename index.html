@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="utf-8">
+     <title>Eland_cruise</title>
+     <!--ios전용 뷰포트-->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--외부정의 css-->
+     <link href="css/style.css" rel="stylesheet">
+     <!--폰트어썸-->
+     <script src="https://kit.fontawesome.com/5dd83c9083.js" crossorigin="anonymous"></script>
+     <!--j query-->
+     <script src="js/jquery.js"></script>
+     <script src="js/custom.js"></script>
+   </head>
+ 
+   <body>
+    <!--로고-->
+    <div class="side_nav">
+      <h1 class="logo">
+        <a href="#"><img src="img/logo.png"></a>
+      </h1>
+      <ul class="gnb">
+        <li>
+          <a href="../code/reservation.html">예약하기</a>
+        </li>
+        <li>
+          <a href="#">운항정보</a>
+          <ul class="sub">
+            <li><a href="#">운항코스</a></li>
+            <li><a href="#">운항시간표</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">이벤트</a>
+          <ul class="sub">
+            <li><a href="#">진행중인 이벤트</a></li>
+            <li><a href="#">종료된 이벤트</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">커뮤니티</a>
+          <ul class="sub">
+            <li><a href="#">갤러리</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">이크루즈 소개</a>
+          <ul class="sub">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">선착장 안내</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">고객센터</a>
+          <ul class="sub">
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자주하시는 질문</a></li>
+            <li><a href="#">1:1 고객문의</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!--sns 버튼 모음-->
+     <ul class="sns">
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+    </div><!--side_nav END-->
+    
+
+    <!--메인페이지 시작-->
+    <div class="wrap">
+      <!--main 동영상-->
+      <section class="vid">
+        <video loop autoplay muted>
+          <source src="img/main.mp4" type="video/mp4">
+        </video>
+        <!--하단 콘텐츠 박스-->
+        <section class="side">
+          <div class="contents">
+            <p><a href="#"><em>운항코스</em></a></p>
+            <p><a href="#"><em>시간표</em></a></p>
+            <p><a href="#"><em>예약조회</em></a></p>
+            <p><a href="#"><em>찾아오시는 길</em></a></p>
+          </div>
+          <!--자동롤링 버튼-->
+          <div class="btnContents">
+            <i class="fas fa-angle-double-left"></i>
+            <i class="fas fa-angle-double-left"></i>
+            <i class="fas fa-angle-double-left"></i>
+          </div>
+        </section>
+      </section><!--main_vid END-->
+
+      <!--cruise 메인배경-->
+      <section class="cruise">
+        <article><!--a1-->
+          <h2>별빛크루즈</h2>
+          <video loop preload="auto" muted>
+            <source src="img/star.mp4" type="video/mp4">
+          </video>
+          <div class="back"></div>
+          <h3><a href="#">별빛크루즈</a></h3>
+          <p>한강에서 즐기는 여의도 야경</p>
+        </article>
+
+        <article><!--a2-->
+          <h2>달빛 뮤직 크루즈</h2>
+          <video loop preload="auto" muted>
+            <source src="img/moon.mp4" type="video/mp4">
+          </video>
+          <div class="back"></div>
+          <h3><a href="#">달빛 뮤직 크루즈</a></h3>
+          <p>반포 달빛 무지개 분수쇼, 세빛섬, 달빛노들
+            야경과<br>함께하는 로맨틱 크루즈 여행</p>
+        </article>
+
+        <article><!--a3-->
+          <h2>선셋 크루즈</h2>
+          <video loop preload="auto" muted>
+            <source src="img/sunset.mp4" type="video/mp4">
+          </video>
+          <div class="back"></div>
+          <h3><a href="#">선셋 크루즈</a></h3>
+          <p>한강 위 풍경과 함께하는 그림같은 크루즈 여행</p>
+        </article>
+
+        <article><!--a4-->
+          <h2>한강 투어 크루즈</h2>
+          <div class="bg_vid"></div>
+          <video loop preload="auto" muted>
+            <source src="img/river.mp4" type="video/mp4">
+          </video>
+          <div class="back"></div>
+          <h3><a href="#">한강 투어 크루즈</a></h3>
+          <p>국회의사당, 밤섬으로 떠나는 도심 속 여행</p>
+        </article>
+      </section><!--cruise-->
+
+      <section class="vid">
+        <video loop autoplay muted>
+          <source src="img/sub_1.mp4" type="video/mp4">
+        </video>
+      </section>
+      
+    </div><!--wrap END-->
+
+    <!--화면전환 버튼-->
+    <div class="scroll-icon-box">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </div><!--scroll-icon-box END-->
+   </body>
+</html>
