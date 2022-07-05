@@ -1,6 +1,3 @@
-/*1.반응형수업>풀스크린동영상사이트 참조*/
-/*2.jquery>마우스오버시영상재생 참조*/
-/*3.jquery>마우스휠 참조*/
 *{margin:0; padding:0; box-sizing:border-box;}
 ul{list-style:none;}
 a{text-decoration:none; color:inherit;}
@@ -150,6 +147,7 @@ header .search{
   border-color:rgb(255, 225, 0);
 }
 
+/*footer*/
 footer{
   width:100%;
   height:100%;
@@ -211,7 +209,7 @@ footer > .footer_wrap{
   color:#001325;
   background-color:transparent;
   cursor:pointer;
-  display:none;/*버튼을 화면에서 제거*/
+  display:none;
 }
 .upBtn:hover{
   color:#fff;
