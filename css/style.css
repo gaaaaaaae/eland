@@ -106,7 +106,9 @@ html,body{
   transition:all 0.5s;
   z-index:10;
 }
-.side:hover{right:-500px; opacity:0.8;}/*해당 영역을 선명하게 만듬*/
+
+.side:hover{right:-500px; opacity:0.8;}
+
 .side > .contents{
   width:400px;
   height:100%;
@@ -147,7 +149,8 @@ html,body{
   transform:translateX(200px);
   transition:all 1.2s;
 }
-.side:hover .contents p{/*p태그 원래위치로 변경*/
+
+.side:hover .contents p{
   transform:translateX(0px);
 }
 .side .contents p em{
@@ -166,7 +169,9 @@ html,body{
   color:paleturquoise;
   transform:skewX(40deg);
 }
+
 .side:hover .btnContents{left:700px;}/*화면상에서 숨기기*/
+
 .btnContents i{
   font-size:60px;
   position:absolute;
